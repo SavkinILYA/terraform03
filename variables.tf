@@ -30,3 +30,63 @@ variable "vpc_name" {
   default     = "develop"
   description = "VPC network&subnet name"
 }
+
+variable "vm_web_image_family" {
+  type    = string
+  default = "ubuntu-2004-lts"
+}
+
+variable "vm_web_platform_id" {
+  type    = string
+  default = "standard-v2"
+}
+
+variable "vm_web_cores" {
+  type    = number
+  default = 2
+}
+
+variable "vm_web_memory" {
+  type    = number
+  default = 1
+}
+
+variable "vm_web_core_fraction" {
+  type    = number
+  default = 5
+}
+
+variable "vm_web_disk_size" {
+  type    = number
+  default = 8
+}
+
+variable "vm_storage_disk_count" {
+  type    = number
+  default = 3
+}
+
+variable "vm_storage_disk_size" {
+  type    = number
+  default = 1
+}
+
+variable "vm_storage_cores" {
+  type    = number
+  default = 2
+}
+
+variable "vm_storage_memory" {
+  type    = number
+  default = 1
+}
+
+variable "vm_storage_core_fraction" {
+  type    = number
+  default = 5
+}
+
+variable "vm_storage_boot_disk_size" {
+  type    = number
+  default = 8
+}
